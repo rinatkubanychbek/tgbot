@@ -23,7 +23,7 @@ def get_response(messages: list[dict]) -> str:
         "Authorization": f"Bearer {os.environ.get('AI_TOKEN')}"
     },
     data=json.dumps({
-        "model": "openai/gpt-4o-mini", 
+        "model": "deepseek/deepseek-r1:free", 
         "messages": messages
     })
     )
